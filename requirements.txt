@@ -1,0 +1,28 @@
+# Azure AI & Agent Framework
+azure-ai-projects>=1.0.0b4
+azure-ai-agents>=1.0.0b4
+azure-ai-inference>=1.0.0b3
+openai>=1.30.0
+
+# Azure SDK
+azure-identity>=1.17.0
+azure-monitor-query>=1.3.0
+azure-mgmt-monitor>=6.0.0
+azure-mgmt-resource>=23.0.0
+azure-cosmos>=4.7.0
+
+# GitHub Integration
+PyGithub>=2.3.0
+
+# HTTP & Utilities
+requests>=2.31.0
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+tenacity>=8.3.0
+rich>=13.7.0
+click>=8.1.7
+
+# Testing
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+pytest-mock>=3.14.0
