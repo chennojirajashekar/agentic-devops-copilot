@@ -33,44 +33,44 @@ A multi-agent orchestration system that:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   Production Environment                     │
-│  ┌──────────┐  ┌──────────┐  ┌─────────────────────┐      │
-│  │ App      │  │ Azure    │  │ Application         │      │
-│  │ Services │──▶│ Monitor  │──▶│ Insights            │      │
-│  └──────────┘  └──────────┘  └─────────────────────┘      │
+│                   Production Environment                    │
+│  ┌──────────┐  ┌──────────┐  ┌─────────────────────┐        │
+│  │ App      │  │ Azure    │  │ Application         │        │
+│  │ Services │──▶│ Monitor  │──▶│ Insights         │        │
+│  └──────────┘  └──────────┘  └─────────────────────┘        │
 └─────────────────────────────┬───────────────────────────────┘
                               │ Alerts
                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│         Microsoft AI Foundry Agent Service                  │
+┌────────────────────────────────────────────────────────────┐
+│         Microsoft AI Foundry Agent Service                 │
 │  ┌────────────────────────────────────────────────────────┐│
 │  │          Multi-Agent Orchestration Workflow            ││
-│  │                                                          ││
-│  │  ┌─────────────┐    ┌──────────────┐    ┌──────────┐ ││
-│  │  │   Alert     │───▶│  Root Cause  │───▶│   Code   │ ││
-│  │  │  Ingestor   │    │   Analysis   │    │   Fix    │ ││
-│  │  │   Agent     │    │    Agent     │    │  Agent   │ ││
-│  │  └─────────────┘    └──────────────┘    └──────────┘ ││
+│  │                                                        ││
+│  │  ┌─────────────┐    ┌──────────────┐    ┌──────────┐   ││
+│  │  │   Alert     │───▶│  Root Cause  │───▶│   Code  │   ││
+│  │  │  Ingestor   │    │   Analysis   │    │   Fix    │   ││
+│  │  │   Agent     │    │    Agent     │    │  Agent   │   ││
+│  │  └─────────────┘    └──────────────┘    └──────────┘   ││
 │  │         │                   │                   │      ││
 │  │         └───────────────────┴───────────────────┘      ││
 │  │                             │                          ││
 │  │                             ▼                          ││
-│  │                    ┌─────────────────┐                ││
-│  │                    │  SRE Reviewer   │                ││
-│  │                    │     Agent       │                ││
-│  │                    └─────────────────┘                ││
+│  │                    ┌─────────────────┐                 ││
+│  │                    │  SRE Reviewer   │                 ││
+│  │                    │     Agent       │                 ││
+│  │                    └─────────────────┘                 ││
 │  │                             │                          ││
 │  │                             ▼                          ││
-│  │                    ┌─────────────────┐                ││
-│  │                    │ Change Manager  │                ││
-│  │                    │     Agent       │                ││
-│  │                    └─────────────────┘                ││
+│  │                    ┌─────────────────┐                 ││
+│  │                    │ Change Manager  │                 ││
+│  │                    │     Agent       │                 ││
+│  │                    └─────────────────┘                 ││
 │  └────────────────────────────────────────────────────────┘│
-│                                                             │
-│  Shared Resources:                                          │
-│  • Thread Storage  • File Storage  • Search Indexes         │
-│  • Observability Dashboard  • RBAC & Governance             │
-└─────────────────────────┬───────────────────────────────────┘
+│                                                            │
+│  Shared Resources:                                         │
+│  • Thread Storage  • File Storage  • Search Indexes        │
+│  • Observability Dashboard  • RBAC & Governance            │
+└─────────────────────────┬──────────────────────────────────┘
                           │
                           ▼
         ┌─────────────────────────────────────┐
@@ -203,13 +203,6 @@ Our project directly addresses the challenge criteria:
 ✅ **Incident Response**: End-to-end automation from alert to verified fix  
 ✅ **Reliability Engineering**: SRE agent enforces SLOs, checks blast radius, validates policies  
 
-### Prize Categories We're Targeting
-
-1. **Grand Prize - Agentic DevOps** (Primary)
-2. **Best Multi-Agent System** (Sophisticated orchestration with Agent Framework)
-3. **Best Azure Integration** (Deep integration with 5+ Azure services)
-4. **Best Use of Microsoft Foundry** (Leveraging projects, storage, observability, governance)
-
 ---
 
 ## 🌟 Demo Scenario
@@ -269,7 +262,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Rajashekar Chennoji**  
 🎓 Student, IGNOU Hyderabad  
-💼 Azure & AI Enthusiast  
+💼 Data Engineer skilled in Azure, GCP, AWS & AI enthusiast 
 🔗 [LinkedIn](https://linkedin.com/in/) | [GitHub](https://github.com/chennojirajashekar)
 
 ---
@@ -285,7 +278,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For questions or collaboration opportunities:
-- **Email**: hackathonsupport@microsoft.com
+- **Email**: rajshekarchennoji@gmail.com
 - **GitHub Issues**: [Create an issue](https://github.com/chennojirajashekar/agentic-devops-copilot/issues)
 
 ---
