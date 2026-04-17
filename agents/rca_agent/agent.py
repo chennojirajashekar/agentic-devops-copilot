@@ -5,7 +5,7 @@ Correlates logs and metrics, uses Azure OpenAI to identify root cause.
 import os
 import json
 import logging
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, asdict
 from openai import AzureOpenAI
 from azure.identity import DefaultAzureCredential
 from azure.monitor.query import LogsQueryClient
@@ -70,7 +70,10 @@ class RCAAgent:
         )
         try:
             r = self.logs_client.query_workspace(self.workspace_id, kusto, timespan=None)
-            return [{"t": str(row[0]), "ep": row[1], "code": row[2], "ms": row[3]} for row in (r.tables[0].rows if r.tables else [])]
+            return [
+                {"t": str(row[0]), "ep": row[1], "code": row[2], "ms": row[3]}
+                for row in (r.tables[0].rows if r.tables else [])
+            ]
         except Exception as e:
             logger.warning("Log query failed: %s", e)
             return self._demo_logs()
